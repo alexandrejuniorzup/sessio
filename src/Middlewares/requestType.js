@@ -3,4 +3,4 @@ function getRequestType(req, res, next) {
     next()
 }
 
-module.exports = getRequestType
+module.exports =  { getRequestType };

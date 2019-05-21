@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
+    "t": "jest",
+    "t:tdd": "jest --watch",
+    "start": "nodemon src/server.js",
+    "t:c": " jest --colors --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +18,14 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
+    "http": "0.0.0",
+    "jest": "^24.8.0",
     "mongoose": "^5.5.8",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "socket.io": "^2.2.0"
   }
 }
