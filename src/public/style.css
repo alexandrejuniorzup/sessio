@@ -24,6 +24,14 @@ input {
     font-size: 14px;
 }
 
+.username {
+    width: 600px;
+    border: 1px solid #ddd;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
 button {
     width: 600px;
     height: 50px;

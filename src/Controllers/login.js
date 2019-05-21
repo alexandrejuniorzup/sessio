@@ -15,7 +15,6 @@ function login(req, res, next) {
             //return res.redirect("/success")
             return res.send(user)
         })
-        console.log(user)
     })(req,res, next);
 
 }
