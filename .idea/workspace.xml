@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="680ee094-8a59-4e03-a902-cf9a345fdc7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Models/Message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/chatMessages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/chat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/chat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/chat.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/chat.pug" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,29 +21,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/public/chat.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="414">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/chat.js">
+        <entry file="file://$PROJECT_DIR$/src/Services/chatMessages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+            <state relative-caret-position="255">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/Message.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -70,7 +67,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/server.js" />
         <option value="$PROJECT_DIR$/src/Routes/register.js" />
-        <option value="$PROJECT_DIR$/src/Services/register.js" />
         <option value="$PROJECT_DIR$/src/Models/User.js" />
         <option value="$PROJECT_DIR$/src/Routes/login.js" />
         <option value="$PROJECT_DIR$/src/Controllers/register.js" />
@@ -97,15 +93,18 @@
         <option value="$PROJECT_DIR$/src/public/style.css" />
         <option value="$PROJECT_DIR$/src/public/chat.html" />
         <option value="$PROJECT_DIR$/src/Controllers/chat.js" />
-        <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/public/chat.pug" />
+        <option value="$PROJECT_DIR$/src/Services/register.js" />
+        <option value="$PROJECT_DIR$/src/Models/Message.js" />
+        <option value="$PROJECT_DIR$/src/Services/chatMessages.js" />
+        <option value="$PROJECT_DIR$/src/app.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="860" />
+    <option name="x" value="547" />
     <option name="y" value="23" />
-    <option name="width" value="1060" />
+    <option name="width" value="1373" />
     <option name="height" value="969" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -126,12 +125,6 @@
               <item name="session" type="b2602c69:ProjectViewProjectNode" />
               <item name="session" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="session" type="b2602c69:ProjectViewProjectNode" />
-              <item name="session" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +215,8 @@
       <workItem from="1558369970773" duration="1129000" />
       <workItem from="1558373801183" duration="5109000" />
       <workItem from="1558383977645" duration="4775000" />
-      <workItem from="1558455547917" duration="10387000" />
+      <workItem from="1558455547917" duration="10753000" />
+      <workItem from="1558469033814" duration="5008000" />
     </task>
     <servers />
   </component>
@@ -238,17 +232,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55535000" />
+    <option name="totallyTimeSpent" value="60909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="860" y="23" width="1060" height="969" extended-state="0" />
+    <frame x="547" y="23" width="1373" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.21364985" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24529722" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.20092915" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2078978" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -269,22 +263,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Services/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/asdsad.js" />
     <entry file="file://$PROJECT_DIR$/src/Utils/logged.js" />
-    <entry file="file://$PROJECT_DIR$/src/Models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Middlewares/requestType.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -410,13 +390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/chat.js" />
     <entry file="file://$PROJECT_DIR$/src/Routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -459,13 +433,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/chat.html" />
     <entry file="file://$PROJECT_DIR$/src/Controllers/chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -473,17 +441,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
+    <entry file="file://$PROJECT_DIR$/src/public/chat.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="930">
+          <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/chat.pug">
+    <entry file="file://$PROJECT_DIR$/src/Models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="112">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/chatMessages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>

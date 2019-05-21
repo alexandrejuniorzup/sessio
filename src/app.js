@@ -41,17 +41,44 @@ app.use('/login', require("./Routes/login"));
 app.use("/register", require("./Routes/register"));
 app.use('/chat', require("./Routes/chat"));
 
+var messages = [];
+const service = require("./Services/chatMessages.js");
 
 io.on('connection', socket => {
 
     console.log("a user connected");
 
+    service.getMessages()
+        .then((msgs) => {
+             messages = msgs;
+             socket.emit("history", messages);
+        })
+        .catch((err) => {
+            console.log(err)
+        });
+
+
+
     socket.on("disconnect", () => {
+        service.deleteData()
+            .then( () => {
+                return service.saveManyMessages(messages)
+                    .catch((err) => {
+                        console.log("AAAA :" + err)
+                    });
+            });
         console.log("user disconnected")
     });
 
     socket.on('sendMessage', (msg) => {
+        if(messages.length === 10){
+            messages.shift();
+            messages.push(msg)
+        } else {
+            messages.push(msg)
+        }
         io.emit('sendMessage', msg);
+
     })
 });
 

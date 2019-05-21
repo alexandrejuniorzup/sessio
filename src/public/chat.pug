@@ -51,5 +51,13 @@ html
         })
 
         socket.on("sendMessage", (msg) => {
+            renderMessage(msg)
+        })
+
+        function renderMessage(msg){
             $('#chat-messages').append($('<li>').text(msg.user + ": " + msg.message));
+        }
+
+        socket.on("history", (data) => {
+            data.forEach(renderMessage)
         })
