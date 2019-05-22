@@ -3,7 +3,7 @@ const ctrl = require("../Controllers/chat");
 const { logged }  = require("../Utils/authCheck");
 
 router.route("/")
-    .get(ctrl.chat);
+    .get(logged, ctrl.chat);
 
 
 

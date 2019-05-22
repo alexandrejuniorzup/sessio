@@ -19,4 +19,9 @@ function login(req, res, next) {
 
 }
 
-module.exports = { login };
+
+function render(req,res, next) {
+    return res.render("login.pug")
+}
+
+module.exports = { login, render };

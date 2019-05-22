@@ -3,7 +3,7 @@ function success(req,res) {
 }
 
 function failed(req,res) {
-    return res.send("Error")
+    return res.send("Você precisa estar logado")
 }
 
 function glog(req, res) {
