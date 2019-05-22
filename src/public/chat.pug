@@ -7,6 +7,12 @@ html
         script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
     body
+        nav
+            div.nav-warppper
+                if(username)
+                    ul(id="nav-mobile" class="right hide-on-med-and-down")
+                        li
+                            a(href="/login/logout") Logout
         #chat-app
             #chat.has-text-centered
                 section.hero.is-success

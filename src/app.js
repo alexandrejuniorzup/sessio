@@ -20,6 +20,7 @@ app.set('view engine', 'pug');
 app.use(session({
     secret: "session",
     resave: true,
+    cookie:{_expires : 600000},
     saveUninitialized: true
 }));
 

@@ -2,11 +2,6 @@ const passport = require('passport')
 
 function login(req, res, next) {
 
-    // passport.authenticate("local", {
-    //     successRedirect: '/success',
-    //     failureRedirect: '/failed'
-    // })(req, res, next)
-
     passport.authenticate("local", (err, user, info) => {
         if(err) return next(err);
         if(!user) return res.redirect("/failed");
@@ -24,4 +19,8 @@ function render(req,res, next) {
     return res.render("login.pug")
 }
 
-module.exports = { login, render };
+function logout(req,res){
+    req.logout();
+    res.send("Você foi deslogado")
+}
+module.exports = { login, render, logout };

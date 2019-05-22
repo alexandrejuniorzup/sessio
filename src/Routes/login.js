@@ -8,4 +8,7 @@ router.route("/")
 router.route("/")
     .get(ctrl.render);
 
+router.route('/logout')
+    .get(ctrl.logout);
+
 module.exports = router;
