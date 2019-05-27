@@ -1,9 +1,9 @@
 const router = require("express").Router();
 const ctrl = require("../Controllers/chat");
-const { logged }  = require("../Utils/authCheck");
+//const { logged }  = require("../Utils/authCheck");
 
 router.route("/")
-    .get(logged, ctrl.chat);
+    .get(ctrl.chat);
 
 
 

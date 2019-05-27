@@ -41,7 +41,14 @@ html
     script.
 
         const socket = io()
+        var chat = $('#chat-messages');
 
+        socket.on('update', (msg) => {
+            $('#chat-messages').append($('<li>').text(msg));
+        })
+        socket.on('left', (msg) => {
+            $('#chat-messages').append($('<li>').text(msg));
+        })
         $('form').submit( (e) => {
 
             e.preventDefault();
@@ -61,7 +68,9 @@ html
         })
 
         function renderMessage(msg){
-            $('#chat-messages').append($('<li>').text(msg.user + ": " + msg.message));
+            chat.append($('<li>').text(msg.user + ": " + msg.message));
+            chat.push($('<li>').text("a"))
+
         }
 
         socket.on("history", (data) => {

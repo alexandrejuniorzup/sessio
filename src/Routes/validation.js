@@ -1,8 +1,9 @@
 const router = require("express").Router();
-const ctrl = require("../Controllers/register");
-
+const ctrl = require("../Controllers/validation");
 
 router.route("/")
-    .post(ctrl.createUser);
+    .post(ctrl.check)
+
+
 
 module.exports = router;

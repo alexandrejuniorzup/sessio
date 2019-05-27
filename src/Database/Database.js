@@ -5,4 +5,4 @@ mongoose.connect("mongodb://localhost:27017/project", { useNewUrlParser: true}, 
     // else { console.log("Connected") }
 })
 
-module.exports = mongoose
+module.exports = mongoose;
